@@ -1,0 +1,10 @@
+[package]
+name = "enx_tao_ffi"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish = false
+
+[dependencies]
+tao.workspace = true
+interoptopus = { workspace = true, features = ["macros"] }

@@ -1,0 +1,17 @@
+[package]
+name = "enx_tao_ffi_build"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish = false
+
+[lib]
+name = "tao"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+enx_tao_ffi = { path = "../enx_tao_ffi" }
+
+[build-dependencies]
+enx_tao_ffi = { path = "../enx_tao_ffi" }
+interoptopus_csharp.workspace = true
